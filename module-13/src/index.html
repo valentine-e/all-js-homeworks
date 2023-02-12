@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заголовок страницы</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="./sass/main.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../node_modules/basiclightbox/dist/basicLightbox.min.css" />
+  </head>
+  <body>
+    <div class="container pb-5">
+      <div class="p-3">
+        <form data-search-form class="d-flex">
+          <input
+            name="searchQuery"
+            type="text"
+            class="form-control me-5"
+            placeholder="Search for images..."
+          />
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+      </div>
+
+      <ul class="gallery"></ul>
+      <div data-image-container class="row"></div>
+
+      <button class="load-btn hidden">load more</button>
+
+      <div id="sentinel"></div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
